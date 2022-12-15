@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/total_questions"
+        android:text="JulQuiz "
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Frågan"
+        android:id="@+id/question"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:layout_above="@id/choices_layout"
+        android:textAlignment="center"
+        android:layout_margin="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/choices_layout"
+        android:layout_centerInParent="true">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/ans_1"
+            android:backgroundTint="@color/white"
+            android:text="Answer 1"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/ans_x"
+            android:backgroundTint="@color/white"
+            android:text="Answer X"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/ans_2"
+            android:backgroundTint="@color/white"
+            android:text="Answer 2"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:text="Svara"
+        android:layout_below="@id/choices_layout"
+        android:layout_marginTop="40dp"/>
+
+</RelativeLayout>
